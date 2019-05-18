@@ -1,0 +1,17 @@
+pipeline{
+    agent any
+    stages{
+          stage('build and test'){
+               echo 'building code'
+          }
+
+         stage('sonar analysis'){
+               echo 'sonar analysis'
+          }
+
+          stage('Quality gate'){
+          echo 'quality Quate check'
+             }
+
+    }
+}
